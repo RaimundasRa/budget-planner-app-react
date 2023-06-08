@@ -22,11 +22,11 @@ const AddExpenseForm = () => {
             id="cost"
           ></input>
         </div>
-        <dic className="col-sm">
-          <button type="submit" className="btn btn-submit">
+        <div className="col-sm">
+          <button type="submit" className="btn btn-primary">
             Save
           </button>
-        </dic>
+        </div>
       </div>
     </form>
   );
