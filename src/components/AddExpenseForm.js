@@ -26,7 +26,7 @@ const AddExpenseForm = () => {
   return (
     <form onSubmit={onSubmit}>
       <div className="row">
-        <div className="col-sm">
+        <div className="col-sm col-lg-4">
           <label for="name">Name</label>
           <input
             required="required"
@@ -37,7 +37,7 @@ const AddExpenseForm = () => {
             onChange={(event) => setName(event.target.value)}
           ></input>
         </div>
-        <div className="col-sm">
+        <div className="col-sm col-lg-4">
           <label for="cost">Cost</label>
           <input
             required="required"
@@ -48,10 +48,12 @@ const AddExpenseForm = () => {
             onChange={(event) => setCost(event.target.value)}
           ></input>
         </div>
-        <div className="col-sm">
-          <button type="submit" className="btn btn-primary">
-            Save
-          </button>
+        <div className="row mt-3">
+          <div className="col-sm">
+            <button type="submit" className="btn btn-primary">
+              Save
+            </button>
+          </div>
         </div>
       </div>
     </form>
