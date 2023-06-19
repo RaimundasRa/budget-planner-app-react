@@ -2,10 +2,10 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Budget from "./components/Budget";
 import Remaining from "./components/Ramaining";
-import Spent from "./components/Spent";
 import ExpenseList from "./components/ExpenseList";
 import AddExpenseForm from "./components/AddExpenseForm";
 import { AppProvider } from "./context/AppContext";
+import ExpenseTotal from "./components/ExpenseTotal";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
             <Remaining />
           </div>
           <div className="col-sm">
-            <Spent />
+            <ExpenseTotal />
           </div>
         </div>
         <h3 className="mt-3">Expenses</h3>
